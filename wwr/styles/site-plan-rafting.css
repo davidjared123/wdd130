@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root{
+    --primary-color: #1985A1;
+    --secondary-color: #4C5C68;
+    --accent1-color: #46494C;
+    --accent2-color: #C5C3C6;
+    --accent-white: #e6e6e6;
+
+    --heading-font: 'Rock Salt', cousive;
+    --paragraph-font: 'Roboto', helvetica;
+}
+
+body{
+    font-family:var(--paragraph-font);
+    color: var(--accent1-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+}
+
+p{
+    padding: 25px;
+}
+
+nav{
+    display: flex;
+    font-size: 1.2rem;
+    /* background: var(--primary-color); */
+    background-color: var(--accent-white);
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: var(--accent1-color);
+    padding: 20px 25px;
+}
+
+nav a:hover{
+    background-color: var(--primary-color);
+    color: var(--accent-white);
+    transition: all 400ms;
+}
+
+/* nav a:link, nav a:visited{
+    color: var(--primary-color); 
+} */
+
+.colors {
+    color: var(--accent-white);
+}
+
+th{
+    padding: 1em;
+}
+.colors .color-1{
+background-color: var(--accent-white);
+color: var(--accent1-color);
+}
+
+.colors .color-2{
+background-color: var(--accent2-color);
+color: var(--accent1-color);
+}
+
+.colors .color-3{
+background-color: var(--accent1-color);
+}
+
+.colors .color-4{
+background-color: #4C5C68;
+}
+
+.colors .color-5{
+background-color: var(--primary-color);
+}
+
+.font-1{
+    font-family: var(--paragraph-font);
+}
+
+.font-2{
+    font-family: var(--heading-font);
+}
+
+.font-colored-1{
+    font-family: var(--heading-font);
+    padding: 1em;
+    background: var(--accent-white);
+    color: var(--accent1-color);
+}
+
+.font-colored-2{
+    font-family: var(--heading-font);
+    padding: 1em;
+    background: var(--accent-white);
+    color: var(--primary-color);
+}
+
+
+.font-colored-3{
+    font-family: var(--heading-font);
+    padding: 1em;
+    background: var(--primary-color);
+    color: var(--accent-white);
+}
