@@ -71,8 +71,7 @@ footer{
     text-align:center;
 }
 
-/* Class selectors */
-
+/* Class Selectors */
 .box{
     margin: 1rem;
     border: 1px solid rgba(0, 0,0, 0.1);
@@ -84,11 +83,11 @@ footer{
 aside{
     width: 20em;
     text-align: center;
+    position: relative;
 }
 
 aside h2{
-    position: relative;
-    color: red;
+    position: absolute;
     top: 47px;
     left: 150px;
 }
