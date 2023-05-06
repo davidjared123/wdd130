@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
 :root{
+
+    --primary-color: #1985A1;
+    --secondary-color:#4C5C68 ;
+    --accent1-color: #46494C;
+    --accent2-color:#C5C3C6 ;
+    --heading-font:'Rock Salt', cousive ;
+    --paragraph-font: 'Roboto', helvetica;
+    /* 
+    */
+    --nav-background-color:#d6d3d7;
+    --nav-link-color: #46494C; 
+    --nav-hover-background-color: #1985A1;
+    --nav-hover-link-color: #e6e6e6;
+  
+/* 
     --primary-color: #1985A1;
     --secondary-color: #4C5C68;
     --accent1-color: #46494C;
     --accent2-color: #C5C3C6;
-    --accent-white: #e6e6e6;
-
-    --heading-font: 'Rock Salt', cousive;
-    --paragraph-font: 'Roboto', helvetica;
+    --accent-white: #e6e6e6; */
 }
 
 body{
@@ -27,20 +39,19 @@ p{
 nav{
     display: flex;
     font-size: 1.2rem;
-    /* background: var(--primary-color); */
-    background-color: var(--accent-white);
+    background-color: var(--nav-background-color );
 }
 
 nav a{
     display: block;
     text-decoration: none;
-    color: var(--accent1-color);
+    color: var(--nav-link-color);
     padding: 20px 25px;
 }
 
 nav a:hover{
-    background-color: var(--primary-color);
-    color: var(--accent-white);
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
     transition: all 400ms;
 }
 
@@ -49,14 +60,14 @@ nav a:hover{
 } */
 
 .colors {
-    color: var(--accent-white);
+    color: var(--nav-hover-link-color);
 }
 
 th{
     padding: 1em;
 }
 .colors .color-1{
-background-color: var(--accent-white);
+background-color: var(--nav-hover-link-color);
 color: var(--accent1-color);
 }
 
@@ -70,7 +81,7 @@ background-color: var(--accent1-color);
 }
 
 .colors .color-4{
-background-color: #4C5C68;
+background-color: var(--secondary-color);
 }
 
 .colors .color-5{
@@ -88,14 +99,14 @@ background-color: var(--primary-color);
 .font-colored-1{
     font-family: var(--heading-font);
     padding: 1em;
-    background: var(--accent-white);
+    background: var(--nav-hover-link-color);
     color: var(--accent1-color);
 }
 
 .font-colored-2{
     font-family: var(--heading-font);
     padding: 1em;
-    background: var(--accent-white);
+    background: var(--nav-hover-link-color);
     color: var(--primary-color);
 }
 
@@ -104,5 +115,5 @@ background-color: var(--primary-color);
     font-family: var(--heading-font);
     padding: 1em;
     background: var(--primary-color);
-    color: var(--accent-white);
+    color: var(--nav-hover-link-color);
 }
