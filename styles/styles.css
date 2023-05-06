@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
 body{
     margin: 0;
 }
@@ -19,22 +32,24 @@ h1{
 }
 
 main{
+    margin-top: 2rem;
     margin-left: 2em;
-    max-width: 840px;
+    max-width: 640px;
 }
 
 main img{
-    width: 200px;
+    height: 10em;
+    float: right;
+    margin: 0 10px;
+}
+
+main p{
+    height: 10em;
 }
 img{
-    height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-}
-
-p{
-    padding: 10px;
 }
 
 aside{
@@ -54,4 +69,30 @@ footer{
     margin-top: 1em;
     border-top: 1px solid black;
     text-align:center;
+}
+
+/* Class selectors */
+
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0, 0,0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+aside{
+    width: 20em;
+    text-align: center;
+}
+
+aside h2{
+    position: relative;
+    color: red;
+    top: 47px;
+    left: 150px;
+}
+
+nav{
+   display: flex; 
 }
