@@ -38,7 +38,7 @@ main{
 }
 
 main img{
-    height: 10em;
+    max-height: 10em;
     float: right;
     margin: 0 10px;
 }
@@ -62,7 +62,7 @@ aside{
 }
 
 aside img{
-    width: 300px;
+    max-width: 300px;
 }
 
 footer{
