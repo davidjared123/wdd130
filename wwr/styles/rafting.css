@@ -61,6 +61,7 @@ header img{
     background-color: black;
 }
 
+/* title-hero */
 .title-hero{
     position: absolute;
     top: 40vh;
@@ -75,14 +76,18 @@ header img{
     color: white;
     font-size: 3em;
     margin-bottom: 1em;
+
 }
 
 .title-hero article{
-    grid-column: 1;
     background-color: #d6d3d71c;
     height: 10em;
     padding: 1em;
     border: solid rgba(255, 255, 255, 0.2) 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2em;
 }
 
 .hero-img{
@@ -101,19 +106,14 @@ header img{
 }
 
 article{
-    width: 800px;
-    align-self: center;
-    display: grid;
+    width: 60vw;
 }
 
 article img{
     max-height: 10em;
-    grid-row: 1/7;
-    /* float: right; */
 }
+
 article p{
-    /* background: #000; */
-    grid-row: 2/4;
     font-size: 1.3em;
     color: white;
     font-weight: 500;
@@ -123,7 +123,6 @@ section{
     width: calc(100% - 4em);
     text-align: center;
     padding: 2em 2em 0 2em;
-    /* background: #aea3a3; */
 }
 
 
