@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+form{
+    font-size: large;
+    text-align: left;
+    background: #e8e6e6;
+    border: solid gray 1px;
+    width: 450px;
+    padding: 2em 1.5em;
+    border-radius: 0.6em;
+    display: grid;
+    grid-gap: 0.8em;
+}
+
+.margin-example{
+    color: white;
+    background-color: rgb(38, 38, 38);
+    padding: 0.8em 3em 0.8em 0.8em;
+    max-width: 250px;
+    justify-self: center;
+}
+
+button{
+    color: white;
+    padding: 0em;
+    font-size: 18px;
+    height: calc(4em - 18px);
+    border-radius: 0.5em;
+    background-color: #000080;
+    border: none;
+}
+button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+input, select{
+    height: 3em;
+}
+
+textarea{
+    min-height: 6em;
+}
