@@ -1,0 +1,90 @@
+.main{
+    text-align: center;
+    line-height: 2.5em;
+    padding: 2em;
+}
+.main a{
+    text-decoration: none;
+}
+.map iframe{
+    width: 100%;
+}
+
+h1{
+    color: #1985A1;
+}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-evenly;
+}
+.card{
+    background: #c8c8c8;
+    width: 300px;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.card img{
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+/* FORM */
+.form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    font-size: large;
+    text-align: left;
+    background: #e8e6e6;
+    border: solid gray 1px;
+    width: 600px;
+    padding: 2em 1.5em;
+    border-radius: 0.6em;
+    display: grid;
+    grid-gap: 0.8em;
+}
+
+.margin-example{
+    color: white;
+    background-color: rgb(38, 38, 38);
+    padding: 0.8em 3em 0.8em 0.8em;
+    max-width: 250px;
+    justify-self: center;
+}
+
+button{
+    color: white;
+    padding: 0em;
+    font-size: 18px;
+    height: calc(4em - 18px);
+    border-radius: 0.5em;
+    background-color: #000080;
+    border: none;
+}
+button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+input, select{
+    height: 3em;
+}
+
+textarea{
+    min-height: 6em;
+}
+
+.form input[type="checkbox"]{
+    width: 20px;
+    padding: 0;
+    margin-left: 10px;
+}
