@@ -135,6 +135,12 @@ footer{
     text-align: center;
     padding: 0.5em;
     margin-top: 1em;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    overflow: hidden;
 }
 
 
@@ -146,6 +152,7 @@ footer{
 .sociallinks img:hover{
  height: 32px;
  transition: all 200ms;
+ overflow: hidden;
 }
 
 

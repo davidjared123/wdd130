@@ -1,0 +1,62 @@
+.main-img-home{
+    background-image: url("../images/main-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 860px;
+    position: relative;
+    opacity: 0.5; 
+}
+
+.info-container{
+    padding: 3em 4em;
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    max-width: 980px;
+}
+
+.info-container a{
+    display: block;
+    margin-top: 2em;
+    text-decoration: none;
+    padding: 0.3em;
+    margin: 2em 12em;
+    border-radius: 15px;
+    background-color: #1985A1;
+    font-weight: 700;
+    color: white;
+    font-size: 1.2em;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    /* background-color: beige; */
+    margin-bottom: 6em ;
+}
+
+.form-container .img{
+    /* background-color: aqua; */
+    padding: 0;
+    margin: 0;
+}
+
+.form-container .form{
+    /* background-color: aquamarine; */
+    margin: 0;
+    padding: 0;
+}
+
+.form-container .form.title{
+    font-size: 3em;
+    background-color: red;
+}
