@@ -49,7 +49,7 @@ nav a:hover{
     color: var(--nav-hover-background-color);
 }
 header img{
-    max-width: 7em;
+    max-width: 6em;
     border: none;
 }
 
