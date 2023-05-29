@@ -14,10 +14,14 @@ h1{
     color: #1985A1;
 }
 
+nav .actived{
+    color: var(--primary-color);
+}
 .cards-grid{
     display: grid;
     grid-template-columns: 300px 300px 300px;
     justify-content: space-evenly;
+    width: 100vw;
 }
 .card{
     background: #c8c8c8;
@@ -40,6 +44,8 @@ h1{
     display: grid;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    padding: 5em;
 }
 form{
     font-size: large;

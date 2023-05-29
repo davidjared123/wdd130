@@ -34,7 +34,9 @@
     color: white;
     font-size: 1.2em;
 }
-
+.section-container{
+    width: 100vw;
+}
 .form-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,6 +54,7 @@
 
 .form-container .form{
     /* background-color: aquamarine; */
+    width: 100%;
     margin: 0;
     padding: 0;
 }

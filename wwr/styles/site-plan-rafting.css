@@ -49,6 +49,10 @@ nav a{
     padding: 20px 25px;
 }
 
+nav .actived{
+    color: var(--primary-color);
+}
+
 nav a:hover{
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
