@@ -62,8 +62,12 @@ p {
 }
 
 aside {
-  width: 20rem;
-  margin: 1rem;
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 aside h2 {
