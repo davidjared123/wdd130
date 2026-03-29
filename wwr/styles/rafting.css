@@ -138,6 +138,7 @@ nav a:hover {
 /* --- 6. HISTORY SECTION (CSS GRID) --- */
 .history {
   padding: 40px 0;
+  /* background-color: var(--secondary-color); */
 }
 
 .history h2 {
@@ -152,6 +153,7 @@ nav a:hover {
   /* Texto - Imagen - Texto */
   gap: 20px;
   align-items: center;
+
 }
 
 .history-container img {
