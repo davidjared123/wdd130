@@ -220,3 +220,105 @@ footer {
 .socialmedia a {
   color: white;
 }
+
+/* --- 9. CONTACT PAGE STYLES --- */
+
+.contact-info {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contact-info h1 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* El Grid para el mapa y el formulario */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Mitad y mitad */
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo para los radio buttons y checkbox */
+.form-item label input {
+  margin-right: 10px;
+}
+
+.form-section button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section button:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Sección de Empleados (Similar a la galería de aventura) */
+.employee-section {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #ddd;
+}
+
+.employee-section h2 {
+  margin-bottom: 30px;
+  font-family: var(--heading-font);
+}
+
+.employee-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.employee-gallery img {
+  border-radius: 50%;
+  /* Los hace redondos como en muchos perfiles */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--secondary-color);
+}
+
+/* Responsivo: Si la pantalla es pequeña, se pone uno debajo del otro */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}

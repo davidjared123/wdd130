@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.1em;
+    color: #333;
+    background: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 2rem auto;
+    color: navy;
+    text-align: center;
+    max-width: 650px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #eee;
+}
+
+/* Las líneas que dividen las secciones */
+fieldset {
+    border: 1px solid #b2b2b2;
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+}
+
+/* El texto que interrumpe la línea */
+legend {
+    color: navy;
+    padding: 0 10px;
+    font-size: 1.3em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+/* Para que el texto de los lugares vividos quede arriba y centrado */
+.textarea-block {
+    display: block;
+    text-align: center;
+}
+
+.textarea-block label {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #999;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    justify-self: start;
+    /* Alineado al inicio de su celda */
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: fit-content;
+    margin: 1.5rem auto 0;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000060;
+}
+
+footer {
+    margin: 2rem auto;
+    width: 650px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
