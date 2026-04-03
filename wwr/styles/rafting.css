@@ -235,6 +235,21 @@ footer {
 }
 
 /* El Grid para el mapa y el formulario */
+
+/* --- REGLA: Moviendo el estilo del iframe al CSS --- */
+.map iframe {
+  border: 0;
+  width: 100%;
+}
+
+/* Ajuste para los radio buttons y labels asociados */
+.form-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
