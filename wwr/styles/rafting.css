@@ -89,8 +89,8 @@ nav a:hover {
 /* Bajamos el título un poco para que no pegue al header */
 .hero h1 {
   position: absolute;
-  top: 80px;
-  /* Lo bajamos de 40px a 80px */
+  top: 180px;
+  /* Título más abajo para no tapar la parte principal de la imagen */
   width: 100%;
   text-align: center;
   font-family: var(--heading-font);
@@ -99,6 +99,22 @@ nav a:hover {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   /* Sombra más fuerte para que resalte */
   z-index: 2;
+}
+
+/* Texto y botón de llamado a la acción debajo del título */
+.hero-message {
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-message p {
+  color: var(--accent2-color);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Bajamos la caja blanca para que esté en el tercio inferior */
@@ -326,9 +342,143 @@ footer {
   border: 3px solid var(--secondary-color);
 }
 
+/* --- 10. HOME PAGE STYLES --- */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.home-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.newsletter button:hover {
+  background-color: var(--accent1-color);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--accent1-color);
+  text-decoration: none;
+}
+
+/* --- 11. TRIPS PAGE STYLES --- */
+.trips-container {
+  padding: 40px 0;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.trip-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  background-color: white;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.contact-cta {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 40px;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
 /* Responsivo: Si la pantalla es pequeña, se pone uno debajo del otro */
 @media (max-width: 768px) {
-  .contact-grid {
+
+  .contact-grid,
+  .home-grid {
     grid-template-columns: 1fr;
   }
 
